@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Registration Form</title>
+	<link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body align="center">
+
+<h1>Student Registration form</h1>
+<div class="container1">
+<form action="./feedback.html">
+  <div class="container2">
+    <label><b>Name:</b></label><br>
+    <input type="text" placeholder="eg. Joshn Marsh" name="name" required><br>
+    <br>
+    <label><b>Registration Number:</b></label><br>
+    <input type="text" placeholder="eg. 140200284" name="reg" required><br>
+    <br>
+    <label><b>Date of Birth:</b></label>
+    <input type="date" name="dob" required><br>
+    <br>
+    
+    <label><b>Gender:</b></label>
+    <input type="radio" name="gender" value="male" checked> Male
+  	<input type="radio" name="gender" value="female"> Female<br>
+  	<br>
+	<label><b>Branch:</b></label>
+    <select required>
+	  <option value="cs">Computer Science</option>
+	  <option value="it">Information Technology</option>
+	  <option value="cce">Computer and Communication Engineering</option>
+	  <option value="oth">Other</option>
+	</select>
+  	<br>
+	<br>
+    <label><b>Phone Number:</b></label><br>
+    <input type="text" placeholder="eg. 9999999999" name="phn" required><br>
+    
+    <br>
+    <label><b>Hostel Block details:</b></label><br>
+    <input type="text" placeholder="eg. 10th Block, 1001" name="add" required><br>
+    <br>
+
+
+    <div>
+      	<button type="submit" class="signupbtn">Register</button>
+      	<button type="reset"  class="cancelbtn">Reset</button>
+    </div>
+
+  </div>
+</div>
+</form>
+
+
+
+</body>
+</html>

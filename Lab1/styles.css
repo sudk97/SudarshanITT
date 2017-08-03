@@ -1,0 +1,42 @@
+input[type=text] {
+    width: 90%;
+    padding: 10px 10px;
+    margin: 8px 0;
+    border:none;
+    border-bottom: 4px groove;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 10px;
+    margin: 0 35px;
+    border: none;
+    cursor: pointer;
+    width: 33%
+}
+
+.cancelbtn {
+    background-color: #f44336;
+}
+
+.container2 {
+    width: 60%; 
+    padding: 10px 10px;
+    background: rgb(247, 247, 247);
+    border: 1px solid rgba(147, 184, 189,0.8);
+    border-radius: 5px;
+    text-align: left;
+
+}
+.container1 {
+    width: 60%;
+    float: left;
+    position: relative;
+    left: 31%;
+}
+
+body{
+    background-color: #edf1f5;
+
+}
