@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Map</title>
+
+</head>
+<body>
+
+<img src="./map.jpeg" width="1580" height="770" alt="Map" usemap="#mitmap">
+<map name="mitmap">
+  <area shape="rect" coords="30,30,589,280" href="./prog1.html" alt="MIT" onclick="statusDisplay" value="Home">
+  <area shape="circle" coords="215,430,40" href="./ab5.html" alt="AB5" onclick="statusDisplay" value="ab5">
+  <area shape="circle" coords="320,415,40" href="./ab2.html" alt="AB2" onclick="statusDisplay" value="ab2">
+  <area shape="circle" coords="320,520,45" href="./ab1.html" alt="AB1" onclick="statusDisplay" value="ab1">
+  <area shape="circle" coords="440,505,15" href="./ab3.html" alt="AB3" onclick="statusDisplay" value="ab3">
+  <area shape="circle" coords="435,545,20" href="./ab4.html" alt="AB3" onclick="statusDisplay" value="ab4">
+
+</map>
+
+
+
+<script>
+function myFunction() {
+    var val=document.getElementBytag("area").value;
+    window.defaultStatus=val;
+}
+</script>
+
+</body>
+</html>
