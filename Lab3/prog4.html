@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>3 letter Anagrams</title>
+	<script type="text/javascript">
+		function fun()
+		{
+			var r = document.getElementById("ta");
+			var a = document.getElementById("w").value.toString();
+			var fina="";
+			for(var i =0; i<5; i++)
+			{
+				for(var j=0; j<5; j++)
+				{
+					for(var k=0; k<5; k++)
+					{
+						if(i==j||j==k||i==k)
+							continue;
+						fina=fina.concat(a.charAt(i).toString().concat(a.charAt(j).toString(),a.charAt(k).toString()),"\t");
+						
+
+					}
+				}
+			}
+			r.innerText=fina;
+			
+		}
+	</script>
+</head>
+<body>
+<p>Enter 5 letter word: <input type="text" name="w" id="w">
+<button onclick="fun()">Go</button></p>
+<textarea id="ta" rows="15" cols="60"></textarea>
+</body>
+</html>

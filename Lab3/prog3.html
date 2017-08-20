@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Phone management</title>
+</head>
+<body >
+
+
+Enter your telephone number: <input type="text" id="myText" value="9999999999">
+<button onclick="myFunction()">Adjust</button><br><br>
+<input type="text" id="area" value=""> 
+<input type="text" id="p1" value=""> - 
+<input type="text" id="p2" value="">
+
+<script>
+
+function myFunction()
+{
+	var Tel = document.getElementById("myText").value;
+	var area=Tel.charAt(0)+Tel.charAt(1)+Tel.charAt(2);
+	var p1=Tel.charAt(3)+Tel.charAt(4)+Tel.charAt(5);
+	var p2=Tel.charAt(6)+Tel.charAt(7)+Tel.charAt(8)+Tel.charAt(9);
+
+    document.getElementById("area").value = area;
+    document.getElementById("p1").value = p1;
+    document.getElementById("p2").value = p2;
+
+}
+
+</script>
+
+</body>
+</html>

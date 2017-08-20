@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+	var i=0;
+	var w=5;
+	function fun1(){
+		setInterval(fun, 20);
+	}
+
+	function fun()
+	{
+		var con=document.getElementById("txt");
+		if(i==0)
+		{
+			con.innerHTML = "TEXT-GROWING";
+			con.style.color="red";
+			w++;
+			con.style.fontSize=w+'px';
+			if(w==100)
+				i=1;
+
+		}
+		else
+		{
+			con.innerHTML = "TEXT-SHRINKING";
+			con.style.color="blue";
+			w--;
+			con.style.fontSize=w+'px';
+			if(w==5)
+				i=0;
+		}
+
+	}
+</script>
+	<title>Grow Shrink</title>
+</head>
+<body onload="fun1()">
+<p id="txt" >TEXT</p>
+
+</body>
+</html>

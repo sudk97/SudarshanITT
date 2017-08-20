@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Magic Html</title>
+</head>
+<body >
+
+<table cellspacing="50" width="100%">
+<tr>
+<td  onmouseover="ChangeBackgroundColor(0)" onmouseout="ChangeBackgroundColor(5)" >White</td><br>
+<td onmouseover="ChangeBackgroundColor(1)" onmouseout="ChangeBackgroundColor(5)">Black</td><br>
+<td  onmouseover="ChangeBackgroundColor(2)" onmouseout="ChangeBackgroundColor(5)">Red</td><br>
+<td onmouseover="ChangeBackgroundColor(3)" onmouseout="ChangeBackgroundColor(5)">Blue</td><br>
+<td  onmouseover="ChangeBackgroundColor(4)" onmouseout="ChangeBackgroundColor(5)">Yellow</td><br>
+</tr>
+</table>
+
+<script>
+
+function ChangeBackgroundColor(a){
+	if(a==0)
+		document.body.style.backgroundColor = "white";
+	if(a==1)
+		document.body.style.backgroundColor = "black";
+	if(a==2)
+		document.body.style.backgroundColor = "red";
+	if(a==3)
+		document.body.style.backgroundColor = "blue";
+	if(a==4)
+		document.body.style.backgroundColor = "yellow";
+	if(a==5)
+		document.body.style.backgroundColor = "lightblue";
+
+}
+
+
+</script>
+
+</body>
+</html>

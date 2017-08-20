@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pig Latin</title>
+	<script type="text/javascript">
+		
+		function pigfun()
+		{
+			var str = document.getElementById("eng").value;
+			var last=document.getElementById("ta").value;
+			var spl = str.split(" ");
+			for (var i = 0; i < spl.length; i++)
+			{
+			 	spl[i] = spl[i].substring(1,spl[i].length).concat(spl[i].charAt(0) , "ay");
+			}
+			var newstr = spl.join(" ");
+			document.getElementById("pig").innerHTML = newstr;
+			document.getElementById("ta").innerText=last.concat("\n",str+" -> "+newstr );
+		}
+	</script>
+</head>
+<body>
+Enter a String : <input type="text" name="eng" id="eng">
+<button onclick="pigfun()">Translate</button><br><br>
+<span id="pig"></span><br><br>
+<p>Conversions: </p>
+<textarea id = "ta"  rows = "30" cols ="150"></textarea>
+</body>
+</html>
